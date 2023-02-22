@@ -1,0 +1,168 @@
+:root {
+    --brand-dark-blue: #132f65;
+    --brand-light-blue: #2583c5;
+}
+
+
+body {
+    font: normal 400 1em/1.375 'Helvetica Neue', Arial, Helvetica, 'Segoe UI', sans-serif;
+}
+
+header {
+    background-color: var(--brand-dark-blue);
+    border-bottom: solid 5px var(--brand-light-blue);
+    height: 60px;
+}
+
+header h1 {
+    padding: 0;
+    position: relative;
+    left: -50px;
+    float: left;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+header h1 a {
+    background-image: url('https://images.static.shropshire.gov.uk/newshropshire/v2.0.2/img/sc-logo-swoosh-v1_250x80.svg');
+    background-size: contain;
+    height: 76px;
+    width: 240px;
+    background-repeat: no-repeat;
+    float: left;
+    overflow: hidden;
+    text-indent: 10000%;
+    white-space: nowrap;
+}
+
+.btn-search {
+    background-color: #005785;
+    color: #fff;
+}
+
+.diopanel {
+    display: block;
+    min-height: 180px;
+    border-radius: 10px;
+    color: #fff;
+    padding: 2em;
+}
+
+.diopanel input {
+    border-radius: 0;
+    width: 100%;
+    appearance: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='%23757575' d='m310.6 246.6-127.1 128c-7.1 6.3-15.3 9.4-23.5 9.4s-16.38-3.125-22.63-9.375l-127.1-128C.224 237.5-2.516 223.7 2.438 211.8S19.07 192 32 192h255.1c12.94 0 24.62 7.781 29.58 19.75s3.12 25.75-6.08 34.85z'/%3E%3C/svg%3E") no-repeat calc(100% - 1rem) center white;
+    background-size: 0.6rem;
+    border: none;
+    position: relative;
+    z-index: 110;
+}
+
+.applygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+}
+
+.apply {
+    background-color: rgb(224, 128, 15);
+}
+
+.pay {
+    background-color: rgb(0, 135, 63);
+}
+
+.report {
+    background-color: rgb(193, 0, 118);
+}
+
+.getinvolved {
+    background-color: rgb(33, 119, 176);
+}
+
+.btn {
+    border-radius: 0;
+}
+
+mark {
+    display: inline-block;
+    outline: 2px solid rgba(0, 0, 0, 0);
+    outline-offset: -2px;
+    color: white;
+    background-color: #2177B0;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+#phase-banner {
+    padding: 1rem;
+    margin: 0;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #b1b4b6;
+}
+
+#phase-banner p {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+#phase-banner p>span {
+    align-self: center;
+}
+
+.display-5 {
+    font-size: 2.5rem;
+}
+
+.display-6 {
+    font-size: 2rem;
+}
+
+#report {
+    border-left: 3px solid #000;
+}
+
+#login {
+    background-color: silver;
+    ;
+}
+
+/* Accordion overrides */
+
+.accordion-button:hover {
+    background: var(--brand-light-blue);
+    color: #fff;
+    border: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background: white;
+    border: 0;
+}
+
+.accordion-button:not(.collapsed):hover {
+    background: var(--bs-btn-bg);
+    color: inherit;
+}
+
+.accordion-button:active,
+.accordion-button:focus {
+    background: var(--brand-light-blue);
+    color: #fff;
+    border: 0;
+}
+
+#accordionServices i {
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+#accordionServices p {
+    height: 3em;
+}
